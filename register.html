@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/loginRegister.css">
+        <title>Workfy</title>
+        <link href="img/w.png" rel="icon" type="image/x-icon"/>
+                <script>
+                        function required(){
+                                var fullName = formuser.$fullName.value;
+                                var user = formuser.$user.value;
+                                var pass = formuser.$pass.value;
+                                var confirmPass = formuser.$confirmPass.value;
+                                var email = formuser.$email.value;
+                                var cpf = formuser.$cpf.value;
+                                var CorR = formuser.$CorR.value;
+                                var bornIn = formuser.$bornIn.value;
+
+                                if(fullName == "" && fullName.length <= 4){
+                                        alert("Preencha o campo o nome completo.");
+                                }
+                                else if(user == ""){
+                                        alert("Preencha o campo nome.");
+                                }
+                                else if(pass == "" || pass.length <= 8){
+                                        alert("Preencha o campo senha com minimo 5 caracteres");
+                                }
+                                else if(confirmPass != pass || confirmPass == ""){
+                                        alert("Confirmacao de senha incorreta");
+                                }
+                                else if(email == "" || email.indexOf('@') == -1 ){
+                                        alert("Preencha o campo E-mail.");
+                                }
+                                else if(cpf.length != 11){
+                                        alert("Preencha o campo cpf");
+                                }
+                                else if(CorR == ""){
+                                        alert("Preencha o campo Candidato ou Recrutador");
+                                }
+                                else if(bornIn == "" || bornIn.length != 8){
+                                        alert("Preencha corretamente a data (somente 8 numeros)");
+                                }
+                                else{
+                                      window.open("./login.html");  
+                                }
+                        }
+
+                </script>
+</head>
+<body>
+    <div class="container">
+            <div class="form-data">
+                    <form name="formuser">
+                            <!-- <input type="hidden" name="redirectTo" value="https://instagram.com"> -->
+                            <div class="logo">
+                                    <img src="img/logo3.png" alt="">
+                            </div>
+                                    <label for="$fullName">Nome Completo</label>
+                                    <input name="$fullName" type="text placeholder=">
+                                    <label for="$user">Nome Usuario</label>
+                                    <input name="$user" type="text"  placeholder="Numero, username ou e-mail">
+                                    <label for="$pass">Senha</label>
+                                    <input type="password" name="$pass" placeholder="Coloque uma senha dificil">
+                                    <label for="$confirmPass">Confirme a Senha</label>
+                                    <input type="password" name="$confirmPass" placeholder="Confirme a Senha">
+                                    <label for="$email">E-mail</label>
+                                    <input type="text" name="$email" placeholder="E-mail">
+                                    <label for="$cpf">CPF</label>
+                                    <input type="text" name="$cpf" placeholder="Cpf">
+                                    <label for="CorR">Candidato ou recrutador</label>
+                                    <input type="text" name="$CorR" placeholder="Cada um com sua funcao">
+                                    <label for="$bornIn">Data de Nascimento</label>
+                                    <input type="text" name="$bornIn" placeholder="dia/mes/ano">
+                                    <button type="text" value="Submit" onclick="required()" class="form-btn">Login</button>
+                            <span class="has-separator">Or</span>
+                            <button type="submit" value="Submit" class="form-btn-fb">
+                                    <a class ="facebook-login" href="https://www.facebook.com/">
+                                            <div class="icon-fb">
+                                                    <img src="img/facebook.png">Login com facebook
+                                            </div>
+                                    </a>
+                            </button>
+                    </form>
+                    <div class="sign-up">
+                            Ja tem uma conta? <a href="./login.html">Login</a>
+                    </div>
+                    <div class="get-the-app">
+                            <div class="badges">
+                                    <a href="https://www.apple.com/app-store/"><img src="img/as.png"></a>
+                                    <a href="https://play.google.com/store?hl=pt_BR&gl=US"><img src="img/gp.png"> </a>
+                            </div>
+                    </div>
+            </div>
+    </div>
+<footer>
+        <iframe src="./components/footer.html" frameborder="0"></iframe>
+</footer>
+</body>
+</html>
+<!-- static forms -->

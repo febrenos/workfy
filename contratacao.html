@@ -1,0 +1,111 @@
+<!-- Copyright © 2021 Lipecks. All rights reserved -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./img/w.png" rel="icon" type="image/x-icon" />
+    <!-- icons menu -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- style css-->
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Portifolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+    </header>
+    <nav id="menu">
+            <a class="invisible" onclick="fecharMenu()">&#9776;</a>
+            <!--menu icons-->
+            <div class="menuNav">
+                <a href="home.html">
+                    <i class='bx bx-grid-alt nav__icon'></i>
+                    <span class="home">Home</span>
+                </a>
+            </div>
+            <div class="menuNav">
+                <a href="perfil.html">
+                    <i class='bx bx-user nav__icon'></i>
+                    <span class="home">Perfil</span>
+                </a>
+            </div>
+            <div class="menuNav">
+                <a href="contratacao.html">
+                    <i class='bx bx-dock-top nav__icon'></i>
+                    <span class="sobresite">Contratacao</span>
+                </a>
+            </div>
+            <div class="menuNav">
+                <a href="Users.html">
+                    <i class='bx bx-group nav__icon'></i>
+                    <span class="home">Usuarios</span>
+                </a>
+            </div>
+            <div class="menuNav">
+                <a href="chatBot.html">
+                    <i class='bx bx-message-rounded nav__icon'></i>
+                    <span class="contato">Chatbot</span>
+                </a>
+            </div>
+            <div class="menuNav">
+                <a href="about.html">
+                    <i class='bx bxs-info-circle nav__icon'></i>
+                    <span class="sobresite">Informações/dicas</span>
+                </a>
+            </div>
+            <div class="menuNav">
+                <a href="login.html">
+                    <i class='bx bxs-log-out nav__icon'></i>
+                    <span class="sobresite">Logout</span>
+                </a>
+            </div>
+            <label class="theme-switch" for="checkbox">
+                <a>
+                    <input id="checkbox" type="checkbox"></input>
+                    <span class="whitemode">Dark-mode</span>
+                </a>
+            </label>
+    </nav>
+
+    <main id="content">
+        <h1>Contratacao</h1>
+        <div class="progressBar">
+            <div class="balls">
+                <div class="steps"><p>1</p></div>
+                <div class="steps"><p>2</p></div>
+                <div class="steps"><p>3</p></div>
+                <div class="steps"><p>4</p></div>
+                <div class="steps"><p>5</p></div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="card">
+            <div class="topCard">
+                <div class="desc">
+                    <div class="company">
+                        <img src="./img/google.png" alt="">
+                    </div>
+                    <div class="infoCard">
+                        <h3>TI master</h3>
+                        <h3>Google</h5>
+                        <h3>Sao paulo, BR</h3>
+                    </div>
+                </div>
+                <i class='bx bx-pencil nav__icon'></i>
+            </div>
+            <div class="showMore">
+                <a><p>+ Sobre</p></a>
+            </div>
+        </div>
+        <p>Aguarde para mais processos!</p>
+    </main>
+    <footer>
+        <iframe src="./components/footer.html" frameborder="0"></iframe>
+    </footer>
+    <!-- action menu -->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie_svg.min.js"></script>
+</body>
+</html>

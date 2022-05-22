@@ -1,0 +1,43 @@
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contentCards{
+    display: flex;
+    justify-content: space-around;
+}
+.contentCards img{
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.card{
+    padding: 5px;
+    width: 280px;
+    height: 360px;
+    border: 2px solid #6E16E2;
+    border-radius: 10px;
+}
+.card h3{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+h1{
+    text-align: center;
+}
+@media only screen and (max-width: 900px) {
+    .contentCards {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}

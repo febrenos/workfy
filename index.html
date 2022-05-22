@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./img/w.png" rel="icon" type="image/x-icon" />
+    <title>Workfy</title>
+</head>
+<style>
+    *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        transition: 1s;
+        padding: 30px;
+        background: rgb(255, 255, 255);
+        /* background-image: url(./img/bgparticle.jpg);
+        background-attachment: fixed;
+        background-size: cover; */
+    }
+    img{
+        display: block;
+        width: 100px;
+    }
+    h1,h2,h3,h4,h5,p{
+        color: rgb(255, 255, 255);
+    }
+    ul{
+        color: rgb(71, 71, 71);
+    }
+    .title{
+        padding: 30px 0;
+        margin: 30px 0 20px 0;
+        /* margin-top: 50%; */
+        background-color: #374858;
+        color: rgb(189, 189, 189);
+        border-radius: 20px;
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10px 0;
+        width: 250px;
+        border-radius: 20px;
+    }
+    .vl{
+        border-left: 2px solid rgb(71, 71, 71);
+        height: 53.5px;
+        margin: 0 50px 0 30px;
+    }
+    .description{
+        margin: 20px 0 0     0;
+        border-bottom: 2px solid rgb(71, 71, 71);
+    }
+    .descriptioncontent{
+        display: flex;
+        /* justify-content: center; */
+        margin-top: 10px;
+    }
+    .description h3{
+        color: rgb(71, 71, 71);
+    }
+    .intro p{
+        cursor: pointer;
+        text-align: center;
+        margin-top: -18px;
+        transition: .3s;
+        opacity: 0;
+    }
+    .intro p:hover{
+        /* margin-bottom: 20px; */
+        padding: 5px;
+        transition: .6s;
+        opacity: 1;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    /* css cabuloso */
+    .page:nth-child(1) .intro:nth-child(-n+6), .page:nth-child(1) .intro p:nth-child(-n+6):hover{
+        background-color: #69c9ab;
+    }
+    .page:nth-child(2) .intro:nth-child(-n+5), .page:nth-child(2) .intro p:nth-child(-n+5):hover{
+        background-color: #41d3e2;
+    }
+    .page:nth-child(3) .intro:nth-child(-n+4), .page:nth-child(3) .intro p:nth-child(-n+3):hover{
+        background-color: #2eb1ff;
+    }
+    .page:nth-child(4) .intro:nth-child(-n+4), .page:nth-child(4) .intro p:nth-child(-n+4):hover{
+        background-color: #c258ec;
+    }
+</style>
+<body>
+    <div class="title">
+        <h2>PAGES</h2>
+    </div>
+    <div class="content">
+        <div class="page">
+            <div class="intro">
+                <img src="./img/user.png" alt="">
+                <h3>Usuário</h3>
+                <p>Informações do perfil disponíveis para empresas</p>
+            </div>
+            <div class="intro">
+                <h5>Recrutador</h5>
+                <p>Perfil responsável do recrutador, com login e cadastro vizualizando suas vagas e suas preferencias</p>
+            </div>
+            <div class="intro">
+                <h5>Candidato</h5>
+                <p>Perfil responsável do candidato com Rrdes sociais, com login e cadastro</p>
+            </div>
+            <div class="intro">
+                <h5>CV candidato</h5>
+                <p>Curriculo do usuário disponivel para empresas</p>
+            </div>
+            <div class="intro">
+                <h5>Redes sociais</h5>
+                <p>Linkedin, GitHub, Portifolio</p>
+            </div>
+            <div class="intro">
+                <h5>Sobre</h5>
+                <p>Informações profissionais sobre o usuário</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="intro">
+                <img src="./img/hands.png" alt="">
+                <h3>Contratação</h3>
+                <p>Empresas podem vilzualizar perfis de usuários e usuárions podem se inscrever em vagas</p>
+            </div>
+            <div class="intro">
+                <h5>Cadastrar Vaga</h5>
+                <p>Destinada a recrutadores</p>
+            </div>
+            <div class="intro">
+                <h5>Inscrição para vaga</h5>
+                <p>Destinada a candidatos</p>
+            </div>
+            <div class="intro">
+                <h5>Vagas</h5>
+                <p>Vagas disponiveis para candidatos se inscreverem e Recrutadores criarem e editarem as suas</p>
+            </div>
+            <div class="intro">
+                <h5>Processos de seleção</h5>
+                <p>Criado por um recrutador candidatos poderão se inscrever e participar de processos, selecionando os melhores candidatos a vaga e separando em etapas como: provas de proeficiência, entrevistas...</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="intro">
+                <img src="./img/dialog.png" alt="">
+                <h3>Chatbot</h3>
+                <p>Servico de AI (Artificial Intelligent) para usuários e empresas</p>
+            </div>
+            <div class="intro">
+                <h5>Duvidas Frequentes</h5>
+                <p>Auxílio a usuários </p>
+            </div>
+            <div class="intro">
+                <h5>Help bot</h5>
+                <p>Probemas com algo? nosso bot de AI irá auxiliar a todos</p>
+            </div>
+            <div class="intro">
+                <h5>Help Center</h5>
+                <p>Caso o bot não tenha sucesso na ajuda será acionada nossa equipe especializada</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="intro">
+                <img src="./img/info.png" alt="">
+                <h3>Informações/dicas</h3>
+                <p>Informações sobre o site, como funciona e dicas para Contratação</p>
+            </div>
+            <div class="intro">
+                <h5>Melhore seu perfil</h5>
+                <p>Dicas de como se portar em entrevistas, atrair mais recrutadores...</p>
+            </div>
+            <div class="intro">
+                <h5>Navegabiidade</h5>
+                <p>Informações de como navegar pelo site</p>
+            </div>
+            <div class="intro">
+                <h5>Sobre Processos seletivos</h5>
+                <p>Tudo sobre como funcionam os processos de seleção</p>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <h3>About Design</h3>
+    </div>
+        <div class="descriptioncontent">
+            <div>
+                <ul>
+                    <li>Evolua sua carreira</li>
+                    <li>Acessibilidade</li>
+                    <li>Devices</li>
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <ul>
+                    <li>Automatizacão de Processos</li>
+                    <li>Seja contratado</li>
+                    <li>Sem burocracias</li>
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <ul>
+                    <li>Candidatos</li>
+                    <li>Recrutadores</li>
+                    <li>Centaris de ajuda</li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>

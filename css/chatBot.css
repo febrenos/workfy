@@ -1,0 +1,69 @@
+
+    #content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.userBot{
+    display: flex;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.userBot img{
+    width: 30px;
+    border-radius: 100%;
+    margin-left: 5%;
+}
+.userBot .desc{
+    flex-direction: column;
+    margin-left: 15px;
+}
+.userBot .desc h3{
+    font-size: 15px;
+    color: #74c4f7;
+}
+.userBot .desc p{
+    color: #c3c6e0;
+}
+.cardChat{
+    /* width: 300px; */
+    height: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f3f1f1;
+    margin-bottom: 5px;
+}
+.message{
+    padding: 10px;
+    margin: 0 20% 10px 0;
+    background-color:#74c4f7;
+    border-radius: 20px;
+}
+.messageUser{
+    padding: 10px;
+    margin: 0 0 10px 20%;
+    background-color:#ffffff;
+    border-radius: 20px;
+}
+.sendMessage{
+    display: table;
+    width: 300px;
+    margin: 0 0 20px 0;
+    background: #f3f1f1;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sendMessage input{
+    border: 1.2px solid #eee;
+    outline: 0;
+    padding: .4rem;
+    border-radius: 10px;
+}
+.sendMessage i{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 17px;
+    cursor: pointer;
+}

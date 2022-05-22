@@ -1,0 +1,32 @@
+#content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    justify-content: space-between;
+    padding: 5px;
+    text-align: none;
+    display: flex;
+    width: 400px;
+    border-radius: 5px;
+    max-width: 100%;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+.card .desc{
+    display: flex;
+}
+.company img{
+    width: 80px;
+}
+.card div h3:nth-child(1){
+    font-size: 15px;
+}
+.card .infoCard{
+    margin-left: 5px;
+}   
+.card i{
+    cursor: pointer;
+    font-size: 20px;
+}

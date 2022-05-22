@@ -1,0 +1,75 @@
+#content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    padding: 5px;
+    text-align: none;
+    width: 400px;
+    border-radius: 5px;
+    max-width: 100%;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+.topCard{
+    display: flex;
+    justify-content: space-between;
+}
+.card .desc{
+    display: flex;
+}
+.company img{
+    width: 80px;
+}
+.card div h3:nth-child(1){
+    font-size: 15px;
+}
+.card .infoCard{
+    margin-left: 5px;
+}   
+.card i{
+    cursor: pointer;
+    font-size: 20px;
+}
+.showMore p{
+    color: #8c42c3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.progressBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.balls{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-between;
+}
+.steps{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #8c42c3;
+}
+.steps p{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+.steps:nth-child(5){
+    background-color: #858585;
+}
+.line{
+    z-index: -1;
+    position: absolute;
+    width: 350px;
+    height: 5px;
+    background-color: #8c42c3;
+    margin-top: -30px;
+}

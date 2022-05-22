@@ -1,0 +1,147 @@
+body{
+    background-color: #191622;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.form-data{
+    width: 80%;
+    max-width: 36rem;
+    margin-top: 3rem;
+}
+.form-data form{
+    background-color: #fff;
+    border: 1px solid #8c42c3;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    text-align: center;
+}
+.logo img{
+    margin: 22px auto 22px;
+    width: 17.5rem;
+}
+.form-data form input{
+    background: #fafafa;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    outline: 0;
+    border: 1.2px solid #eee;
+    border-radius: .4rem;
+}
+.form-data label{
+    color: #8e8e8e;
+    font-size: 14px;
+}
+.form-data input::placeholder{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+}
+.form-btn{
+    margin: 1rem 0 1.5rem;
+    height: 3rem;
+    background-color: #8c42c3;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.form-btn-fb{
+    background-color: #fff;
+    border: none;
+}
+.icon-fb img{
+    width: 16px;
+
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+.has-separator{
+    font-size: 1.3rem;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.has-separator::before,
+.has-separator::after{
+    content: "";
+    position: absolute;
+    background-color: #dbdbdb;
+    width: 40%;
+    height: 1px;
+    top: 50%;
+}
+.has-separator::before{
+    left: 0;
+}
+.has-separator::after{
+    right: 0;
+}
+.facebook-login{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #385185;
+    margin-bottom: 2.5rem;
+}
+.facebook-login i{
+    font-size: 2rem;
+    margin-right: .7rem;
+}
+.password-reset{
+    border: 0;
+    color: #8c42c3;
+    display: inline;
+    margin-top: 20px;
+    position: relative;
+    font-size: 1.2rem;
+}
+.sign-up{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #262626;
+    padding: 2rem 0;
+    background-color: #fff;
+    border: 1px dashed #8c42c3;
+    margin: 1rem 0;
+}
+.sign-up a{
+    color: #8c42c3;
+    font-weight: 600;
+}
+.get-the-app{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.badges img{
+    max-width: 14rem;
+    cursor:pointer;
+}
+.badges img:first-child{
+    margin-right: 1rem;
+}
+
+@media (max-width: 450px) {
+    body{
+            background-color: #fff;
+    }
+    .logo img{
+            margin: 0 auto 30px;
+    }
+    .form-data form{
+            background-color: transparent;
+            border: none;
+            padding: 0 2rem;
+    }
+    .sign-up{
+            background-color: transparent;
+            border: none;
+            margin: 1rem 0;
+    }
+}
