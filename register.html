@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,14 +26,14 @@
                                 else if(user == ""){
                                         alert("Preencha o campo nome.");
                                 }
-                                else if(pass == "" || pass.length <= 8){
+                                else if(pass == "" || pass.length < 8){
                                         alert("Preencha o campo senha com minimo 5 caracteres");
                                 }
                                 else if(confirmPass != pass || confirmPass == ""){
                                         alert("Confirmacao de senha incorreta");
                                 }
                                 else if(email == "" || email.indexOf('@') == -1 ){
-                                        alert("Preencha o campo E-mail.");
+                                        alert("Preencha o campo E-mail");
                                 }
                                 else if(cpf.length != 11){
                                         alert("Preencha o campo cpf");
