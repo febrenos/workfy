@@ -1,3 +1,35 @@
+/* menu */
+:root{
+    --bg:         #c3c6e0;/*background Web site*/
+    --bg-txt:     #8B898F;/*background in txt*/
+    --txt:        #191622;/*all txt*/
+    --menu:       #2a2830;/*side bar hover*/
+    --menu-bottom:#8c42c3;/*border down menu*/
+    --solid:      #191622;/*color solid*/
+    --solidp:     #a0a0a0;/*color txt inside solid*/
+    --links:      #f3f1f1;/*links 'a', 'btn'*/
+    --linksh:     #fff;/*links 'a' hover*/
+    --linksline:  #6E16E2;/*links line color*/
+    --linkslineb: #260057;/*links line color buton*/
+
+    /*link icons*/
+    --linkedin: #0e76a8;
+    --twitter: #1DA1F2;
+    --instagram: #E1306C;
+    --github: #000;
+    --whatsapp: #2fe063;
+}
+[data-theme="dark"]{ /*.aparenciab:root*/
+    --bg:         #0e0b13;/*background Web site*/
+    --bg-txt:     #191622;/*background in txt*/
+    --txt:        #8B898F;/*all txt*/
+    --menu:       #0F0F0F;/*side bar hover*/
+    --solid:      #000;/*color solid*/
+    --solidp:     #a0a0a0;/*color txt inside solid*/
+    --links:      #fff;/*links 'a', 'btn'*/
+    --linksh:     #D1B5F5;/*links 'a' hover*/
+}
+
 *,
 *::before,
 *::after{
@@ -46,42 +78,11 @@ a:hover{
     text-decoration: underline var(--linksline);
 }
 
-/* menu */
-:root{
-    --bg:         #0e0b13;/*background Web site*/
-    --bg-txt:     #191622;/*background in txt*/
-    --txt:        #8B898F;/*all txt*/
-    --menu:       #0F0F0F;/*side bar hover*/
-    --menu-bottom:#8c42c3;/*border down menu*/
-    --solid:      #000;/*color solid*/
-    --solidp:     #a0a0a0;/*color txt inside solid*/
-    --links:      #fff;/*links 'a', 'btn'*/
-    --linksh:     #D1B5F5;/*links 'a' hover*/
-    --linksline:  #6E16E2;/*links line color*/
-    --linkslineb: #260057;/*links line color buton*/
-
-    /*link icons*/
-    --linkedin: #0e76a8;
-    --twitter: #1DA1F2;
-    --instagram: #E1306C;
-    --github: #000;
-    --whatsapp: #2fe063;
-}
-[data-theme="white"]{ /*.aparenciab:root*/
-    --bg:         #c3c6e0;/*background Web site*/
-    --bg-txt:     #8B898F;/*background in txt*/
-    --txt:        #191622;/*all txt*/
-    --menu:       #2a2830;/*side bar hover*/
-    --solid:      #191622;/*color solid*/
-    --solidp:     #a0a0a0;/*color txt inside solid*/
-    --links:      #f3f1f1;/*links 'a', 'btn'*/
-    --linksh:     #fff;/*links 'a' hover*/
-}
-*{
+/*{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
+}*/
 main{
     padding: 0 24px;
 }
